@@ -29,3 +29,33 @@ pub fn execute_iflet() {
         println!("I don't like letters. Let's go with an emoticon :)!"); // Çıktı: "I don't like letters. Let's go with an emoticon :)!"
     }
 }
+
+enum Foo {
+    Bar,
+    Baz,
+    Qux(u32),
+}
+
+pub fn execute_if_let_second() {
+    let a = Foo::Bar;
+    let b = Foo::Baz;
+    let c = Foo::Qux(100);
+
+    // if with let Foo::Bar checks
+    if let Foo::Bar = a {
+        println!("a is foobar");
+    }
+
+    // WARN: this will print no value
+    if let Foo::Bar = b {
+        println!("b is foobar");
+    }
+
+    if let Foo::Qux(value) = c {
+        println!("c is {}", value);
+    }
+
+    if let Foo::Qux(_value @ 100) = c {
+        println!("c is one hundred");
+    }
+}
