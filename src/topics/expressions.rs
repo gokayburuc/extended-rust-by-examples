@@ -4,6 +4,8 @@ pub fn expressions_execute() {
     let y = {
         let x_squared = x * x;
         let x_cubed = x_squared * x;
+        println!("x square: {}", x_squared);
+        println!("x cube: {}", x_cubed);
     };
 
     let z = { 2 * x };
