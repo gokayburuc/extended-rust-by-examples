@@ -4,6 +4,7 @@ pub mod binding;
 pub mod capturing_closures;
 pub mod casting;
 pub mod closures;
+pub mod closures_as_input;
 pub mod conditionals;
 pub mod destructure_arrays;
 pub mod destructure_enums;
