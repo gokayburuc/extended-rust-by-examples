@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn execute_iflet() {
     // TODO: Some(T) -> Burada `Some(T)` türünde bir `Option` örneği oluşturulmalı.
     let number = Some(7); // `number` değişkenine `Some(7)` atanmış, yani bir değer içeriyor.

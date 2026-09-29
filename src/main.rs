@@ -5,8 +5,8 @@ mod additional;
 // the mods that we are going to use
 mod topics;
 fn main() {
-    methods::execute_methods();
-    closures::execute_closure();
-    closures::execute_closure_capture(18);
     capturing_closures::execute_capturing_closures();
+    capturing_closures::execute_capturing_move();
+    closures::execute_closures();
+    methods::execute_method();
 }

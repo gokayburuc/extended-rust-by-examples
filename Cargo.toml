@@ -5,3 +5,7 @@ edition = "2024"
 
 [dependencies]
 rand = "0.9"
+
+# this allows dead_code in project wide and linter not warns you
+[lints.rust]
+dead_code = "allow"
