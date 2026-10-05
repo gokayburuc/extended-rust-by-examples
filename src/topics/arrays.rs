@@ -1,5 +1,3 @@
-#[allow(dead_code)]
-
 pub fn execute_array() {
     // array definition
     let mut my_array: [i32; 3] = [33, 44, 55];

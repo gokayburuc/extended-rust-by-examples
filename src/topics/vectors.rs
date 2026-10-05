@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 pub fn execute_vector() {
     let mut cities = vec!["Edirne", "Kırklareli", "Tekirdağ", "Çanakkale"];
     println!("City List: {:?}", &cities);

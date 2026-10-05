@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 #[derive(Debug)]
 struct Person {
     name: String,
@@ -11,7 +10,6 @@ struct Point {
     y: f32,
 }
 
-#[allow(dead_code)]
 #[derive(Debug)]
 struct Rectangle {
     top_left: Point,
@@ -21,7 +19,6 @@ struct Rectangle {
 #[derive(Debug)]
 struct Pair(i32, f32);
 
-#[allow(dead_code)]
 fn execute_sturcture() {
     let name = String::from("Peter");
     let age = 27;

@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 pub fn execute_freezing() {
     let mut _mutable_integer = 1;
     {

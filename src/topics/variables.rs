@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 pub fn variable_execute() {
     // int
     let my_first_number: i32 = 5;

@@ -1,5 +1,8 @@
 # Rust By Examples Extended Version
 
+![rust-badge](https://img.shields.io/badge/Rust-stable-orange?logo=rust)
+![MIT-licence-badge](https://img.shields.io/badge/license-MIT-blue)
+
 In this rust-by-examples repository, topic list is extended and detailed Turkish and English line comments with explanation were added.
 Also references for topics included.
 
@@ -18,7 +21,7 @@ Then `cd` into the repository path and check the repo with your favourite text e
 Please add the script file with function name to `main.rs` and then :
 
 ```bash
-cargo run 
+cargo run
 ```
 
 ## Todo Checklist
@@ -26,4 +29,3 @@ cargo run
 - [x] Rust By Examples All Examples
 - [x] Additional Scripts with Explanations
 - [ ] References
-

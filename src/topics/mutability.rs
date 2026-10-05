@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 pub fn execute_mutability() {
     let _immutable_binding = 1;
     let mut mutable_binding = 1;

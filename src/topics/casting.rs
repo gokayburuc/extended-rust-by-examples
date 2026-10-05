@@ -1,5 +1,5 @@
 #![allow(overflowing_literals)]
-#[allow(dead_code)]
+
 pub fn execute_casting() {
     // TODO: 65.4321_f32 in rust
     let decimal = 65.4321_f32;

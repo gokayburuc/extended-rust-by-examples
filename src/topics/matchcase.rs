@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 pub fn execute_match() {
     let number: i32 = 14;
 

@@ -1,12 +1,14 @@
-// use create for shorthand usage
-use crate::topics::{capturing_closures, closures, methods};
+use crate::topics::{high_order_functions, iterator_any, iterator_search};
 
 mod additional;
-// the mods that we are going to use
 mod topics;
+
 fn main() {
-    capturing_closures::execute_capturing_closures();
-    capturing_closures::execute_capturing_move();
-    closures::execute_closures();
-    methods::execute_method();
+    // closure_type_anonymity::execute_closure_type_anonymity();
+    // closure_input_functions::execute_closure_input_function();
+    // closure_as_output_parameter::execute_closure_output_parameter();
+    iterator_any::execute_iterator_any();
+    iterator_search::execute_iterator_search();
+    iterator_search::execute_iterator_position();
+    high_order_functions::execute_high_order_function();
 }

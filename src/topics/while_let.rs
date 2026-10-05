@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 pub fn execute_while_let() {
     let mut optional = Some(0);
 

@@ -1,46 +1,57 @@
+/// `FnOnce` trait'i, bir kere çağrılabilen (veya hiç çağrılmayan) fonksiyonlar/closures için kullanılır.
+/// Bu fonksiyon, `F` tipindeki bir closure'ı alır ve bir kere çağırır.
 pub fn execute_closures_apply<F>(f: F)
 where
-    // TODO: check FnOnce trait
-    F: FnOnce(),
+    F: FnOnce(), // `FnOnce`: Closure sadece bir kere çağrılabilir (örneğin, move semantics ile ownership alınmış değişkenler varsa).
 {
-    f();
+    f(); // Closure'ı çağır.
 }
 
-// TODO: add line comments here
+// Bu fonksiyon, `i32` alıp `i32` döndüren bir closure'ı 3 ile çağırır ve sonucu döndürür.
 pub fn execute_apply_to_3<F>(f: F) -> i32
 where
-    F: Fn(i32) -> i32,
+    F: Fn(i32) -> i32, // `Fn`: Closure birden fazla kere çağrılabilir ve immutable referanslar kullanır.
 {
-    f(3)
+    f(3) // Closure'a 3 değerini geçir ve sonucu döndür.
 }
 
-// TODO: check the function
+/// Bu fonksiyon, closure'ların ownership, mutable state ve `FnOnce`/`Fn`/`FnMut` trait'lerini gösterir.
 pub fn execute_closure_as_input() {
-    // TODO: why whe imported std::mem here instead of script header?
-    use std::mem;
-    let greeting = "hello";
+    use std::mem; // `mem::drop`, bellekteki bir değeri erken serbest bırakmak için kullanılır.
 
-    // TODO: check .to_owned() method
+    let greeting = "hello"; // `greeting`: String slice (`&str`), immutable ve stack'te saklanır.
+
+    // `to_owned()`: `&str`'yi `String`'e dönüştürür (heap'te saklanır).
+    // `farewell`: Mutable `String`, ownership bu scope'a aittir.
     let mut farewell = "goodbye".to_owned();
 
+    // `diary`: Bir closure tanımı. `FnOnce` trait'ini uygular çünkü `farewell`'u move eder (ownership alır).
     let diary = || {
-        println!("I said {}", greeting);
+        println!("I said {}", greeting); // `greeting`'e immutable referansla erişilir.
 
+        // `farewell`'a mutable referansla erişilir ve değiştirilir.
         farewell.push_str("!!!");
         println!("Then I screamed {}", farewell);
+
         println!("Now i can sleep, zzzz");
 
-        // TODO: why we dropped the farewell here from memory ?
+        // `mem::drop(farewell)`: `farewell`'u bellekten erken serbest bırakır.
+        // Bu, `farewell`'un ownership'ini elden çıkarır ve `diary` closure'ının `FnOnce` olmasını sağlar.
         mem::drop(farewell);
     };
 
+    // `diary` closure'ını `execute_closures_apply` fonksiyonuna geçir ve çağır.
     execute_closures_apply(diary);
-    // multiple by 2 the x value
+
+    // `double`: Basit bir closure, `x` değerini 2 ile çarpar.
+    // `Fn` trait'ini uygular çünkü immutable referanslar kullanır ve birden fazla kere çağrılabilir.
     let double = |x| 2 * x;
 
+    // `execute_apply_to_3` fonksiyonunu `double` closure'ı ile çağır.
     println!("3 doubled: {}", execute_apply_to_3(double));
 }
 
-// TODO: check ownership
-// TODO: check closures
-// TODO: check traits
+// TODO: traits
+// TODO: Closures
+// TODO: std::mem
+// TODO: ownership

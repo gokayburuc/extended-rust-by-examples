@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 pub fn execute_assert() {
     let x = 5;
     let y = 3;
