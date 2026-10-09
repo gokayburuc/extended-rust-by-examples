@@ -1,4 +1,5 @@
 #[allow(dead_code)]
+#[allow(unused_variables)]
 pub fn execute_variable_bindings() {
     let an_integer: u32 = 1u32;
     let a_boolean: bool = true;
