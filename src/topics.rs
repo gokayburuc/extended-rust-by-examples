@@ -1,3 +1,4 @@
+pub mod aliasing;
 pub mod arrays;
 pub mod assertion;
 pub mod binding;
