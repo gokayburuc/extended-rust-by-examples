@@ -1,6 +1,7 @@
 pub mod aliasing;
 pub mod arrays;
 pub mod assertion;
+pub mod attribute_cfg;
 pub mod binding;
 pub mod capturing_closures;
 pub mod casting;
@@ -19,6 +20,10 @@ pub mod expressions;
 pub mod for_range_loop;
 pub mod freezing;
 pub mod functions_basic;
+pub mod generic_functions;
+pub mod generic_implementations;
+pub mod generics;
+pub mod generics_traits;
 pub mod guard_matches;
 pub mod high_order_functions;
 pub mod iflet;

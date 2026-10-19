@@ -1,8 +1,10 @@
 use std::collections::HashMap;
 
 pub fn match_city(plate_number: i32) {
+    // Create an empty HashMap
     let mut city_info: HashMap<&str, i32> = HashMap::new();
 
+    // insert values into HashMap
     city_info.insert("Edirne", 22);
     city_info.insert("Kırklareli", 39);
     city_info.insert("Bursa", 16);
@@ -24,4 +26,3 @@ pub fn match_city(plate_number: i32) {
         None => println!("Geçersiz Plaka: {}", plate_number),
     };
 }
-

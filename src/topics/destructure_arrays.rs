@@ -3,6 +3,8 @@ pub fn execute_destructive_array() {
 
     match array {
         [0, second, third] => println!("array[0] = 0, array[1] = {}, array[2] = {}", second, third),
+
+        // ignore the index number 1 item
         [1, _, third] => println!(
             "array[0] = 1, array[2] = {} and array[1] was ignored",
             third
