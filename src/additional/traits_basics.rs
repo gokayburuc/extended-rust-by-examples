@@ -6,7 +6,6 @@ struct Sheep {
 // TODO: &'static str
 trait Animal {
     fn new(name: &'static str) -> Self;
-
     fn name(&self) -> &'static str;
     fn noise(&self) -> &'static str;
 
