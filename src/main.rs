@@ -1,6 +1,9 @@
-use crate::additional::{
-    traits_default_methods::execute_default_method_trait,
-    traits_join_function::{CatAgain, report},
+use crate::{
+    additional::{
+        traits_default_methods::execute_default_method_trait,
+        traits_join_function::{CatAgain, report},
+    },
+    topics::generics_multiple_bound::execute_generic_multiple_bound,
 };
 
 mod additional;
@@ -13,4 +16,7 @@ fn main() {
         cat_name: String::from("Isot"),
     };
     report(&our_cat);
+
+    // topics::generics_multiple_bound::execute_generic_multiple_bound();
+    execute_generic_multiple_bound();
 }
