@@ -2,11 +2,11 @@ pub trait Audio {
     fn make_voice(&self) -> String;
 }
 
-struct Cat {
-    animal_name: String,
+pub struct Cat {
+    pub animal_name: String,
 }
-struct Dog {
-    animal_name: String,
+pub struct Dog {
+    pub animal_name: String,
 }
 
 impl Audio for Cat {

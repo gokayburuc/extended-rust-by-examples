@@ -3,6 +3,7 @@ use crate::{
         traits_default_methods::execute_default_method_trait,
         traits_join_function::{CatAgain, report},
     },
+    topics::generics_bounds::{self, execute_generic_bounds},
     topics::generics_multiple_bound::execute_generic_multiple_bound,
 };
 
@@ -17,6 +18,8 @@ fn main() {
     };
     report(&our_cat);
 
-    // topics::generics_multiple_bound::execute_generic_multiple_bound();
+    topics::generics_multiple_bound::execute_generic_multiple_bound();
     execute_generic_multiple_bound();
+    generics_bounds::execute_generic_bounds();
+    execute_generic_bounds();
 }

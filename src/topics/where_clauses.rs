@@ -1,10 +1,12 @@
 use std::fmt::Debug;
 
 trait PrintInOption {
+    // WARN: we used self instead of &self
     fn print_in_option(self);
 }
 
 // INFO: impl for where syntax
+// NOTE: Use this trait for eact T type such as Vec<i32>
 impl<T> PrintInOption for T
 where
     Option<T>: Debug,

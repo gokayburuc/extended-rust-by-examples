@@ -29,4 +29,3 @@ pub fn execute_high_order_function() {
 
     println!("Functional style: {}", sum);
 }
-

@@ -14,4 +14,3 @@ pub fn execute_aliasing() {
         nanoseconds + inches
     );
 }
-

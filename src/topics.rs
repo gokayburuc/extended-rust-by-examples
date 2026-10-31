@@ -23,6 +23,7 @@ pub mod functions_basic;
 pub mod generic_functions;
 pub mod generic_implementations;
 pub mod generics;
+pub mod generics_bounds;
 pub mod generics_multiple_bound;
 pub mod generics_traits;
 pub mod guard_matches;
