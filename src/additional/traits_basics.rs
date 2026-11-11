@@ -1,3 +1,10 @@
+// ============================================================
+// KONU     : Trait Temelleri
+// KAYNAK   : https://doc.rust-lang.org/rust-by-example/trait.html
+// AÇIKLAMA : Rust'ta trait tanımlama ve implementasyonun temel yapısını,
+//            `&dyn Trait` ile dinamik dispatch kullanımını açıklar.
+// ============================================================
+
 struct Sheep {
     naked: bool,
     name: &'static str,

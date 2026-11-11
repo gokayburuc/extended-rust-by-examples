@@ -1,3 +1,11 @@
+// ============================================================
+// KONU     : Trait ile Birleştirme Fonksiyonu
+// KAYNAK   : https://doc.rust-lang.org/rust-by-example/trait.html
+// AÇIKLAMA : Birden fazla struct için ortak bir trait metodunun nasıl
+//            tanımlanıp farklı implementasyonlarla kullanılabileceğini
+//            gösterir.
+// ============================================================
+
 pub trait Audio {
     fn make_voice(&self) -> String;
 }

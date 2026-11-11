@@ -1,3 +1,10 @@
+// ============================================================
+// KONU     : Kısmi Eşitlik (`PartialEq`)
+// KAYNAK   : https://doc.rust-lang.org/std/cmp/trait.PartialEq.html
+// AÇIKLAMA : `PartialEq` trait'ini implemente ederek özel tiplerde
+//            `==` ve `!=` operatörlerinin nasıl tanımlanacağını gösterir.
+// ============================================================
+
 #[derive(Debug)]
 enum BookFormat {
     Paperback,

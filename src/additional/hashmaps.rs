@@ -1,3 +1,11 @@
+// ============================================================
+// KONU     : HashMap Kullanımı
+// KAYNAK   : https://doc.rust-lang.org/std/collections/struct.HashMap.html
+// AÇIKLAMA : Anahtar-değer çiftlerini depolamak için kullanılan
+//            `HashMap<K, V>` veri yapısının oluşturulmasını,
+//            güncellenmesini ve sorgulanmasını gösterir.
+// ============================================================
+
 use std::collections::HashMap;
 
 pub fn execute_hashmap() {

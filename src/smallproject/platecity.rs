@@ -1,3 +1,11 @@
+// ============================================================
+// KONU     : Plaka-Şehir Eşleştirme — Küçük Proje
+// KAYNAK   : https://doc.rust-lang.org/std/collections/struct.HashMap.html
+// AÇIKLAMA : Türk plaka kodlarını şehirlerle eşleştiren `HashMap` tabanlı
+//            küçük bir proje; `HashMap` kullanımını gerçek bir senaryo
+//            üzerinden pekiştirir.
+// ============================================================
+
 use std::collections::HashMap;
 
 pub fn match_city(plate_number: i32) {

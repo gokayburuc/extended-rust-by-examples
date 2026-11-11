@@ -1,3 +1,11 @@
+// ============================================================
+// KONU     : Enum ile Trait Kullanımı
+// KAYNAK   : https://doc.rust-lang.org/rust-by-example/trait.html
+// AÇIKLAMA : Enum varyantları üzerine trait implementasyonu yapılarak
+//            farklı varyantlar için ortak davranışların tanımlanmasını
+//            gösterir.
+// ============================================================
+
 use crate::additional::traits_explain::Audio;
 use crate::additional::traits_explain::Cat;
 use crate::additional::traits_explain::Dog;

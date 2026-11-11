@@ -1,3 +1,10 @@
+// ============================================================
+// KONU     : Trait Varsayılan Metotlar
+// KAYNAK   : https://doc.rust-lang.org/rust-by-example/trait.html
+// AÇIKLAMA : Trait tanımı içinde varsayılan (default) metot gövdesi
+//            eklenerek implementasyonu isteğe bağlı hale getirmeyi gösterir.
+// ============================================================
+
 trait Greeting {
     fn greet(&self) {
         println!("Hello!");

@@ -1,3 +1,10 @@
+// ============================================================
+// KONU     : Temel Kapamalar (Açıklamalı)
+// KAYNAK   : https://doc.rust-lang.org/rust-by-example/fn/closures.html
+// AÇIKLAMA : Kapamaların ne olduğunu ve nasıl çalıştığını adım adım
+//            Türkçe açıklamalarla ele alan genişletilmiş bir örnektir.
+// ============================================================
+
 pub fn execute_closure_square() {
     // | parameter |
     let square = |x| x * x;

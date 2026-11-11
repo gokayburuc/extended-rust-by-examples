@@ -1,3 +1,11 @@
+// ============================================================
+// KONU     : Dövüş Oyunu — Küçük Proje
+// KAYNAK   : https://doc.rust-lang.org/rust-by-example/trait.html
+// AÇIKLAMA : Struct, enum, trait ve `impl` bloklarını birleştiren basit
+//            bir dövüş oyunu senaryosu; Rust'un nesne yönelimli
+//            özelliklerini pekiştirmek için tasarlanmıştır.
+// ============================================================
+
 use rand::Rng;
 
 // Her silahın bir saldırı yapma davranışı var. Bu da generic yapsının dayandığı contract

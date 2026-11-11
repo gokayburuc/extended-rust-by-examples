@@ -1,3 +1,10 @@
+// ============================================================
+// KONU     : Trait Açıklamaları
+// KAYNAK   : https://doc.rust-lang.org/rust-by-example/trait.html
+// AÇIKLAMA : Trait kavramını ve Rust'taki önemini Türkçe açıklamalar
+//            eşliğinde detaylıca ele alan genişletilmiş açıklama dosyasıdır.
+// ============================================================
+
 pub trait Audio {
     fn make_voice(&self) -> String;
 }

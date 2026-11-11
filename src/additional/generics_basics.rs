@@ -1,3 +1,10 @@
+// ============================================================
+// KONU     : Generics Temelleri (Açıklamalı)
+// KAYNAK   : https://doc.rust-lang.org/rust-by-example/generics.html
+// AÇIKLAMA : Generic tür parametrelerinin neden kullanıldığını ve temel
+//            söz dizimini Türkçe açıklamalarla pekiştiren ek örnektir.
+// ============================================================
+
 use std::cmp::PartialOrd;
 // fn en_buyuk_i32(a: i32, b: i32) -> i32 {
 //     if a > b { a } else { b }
